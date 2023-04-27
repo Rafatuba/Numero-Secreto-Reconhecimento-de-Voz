@@ -1,0 +1,98 @@
+:root {
+  --bg-color: #060047;
+  --primary-color: #E90064;
+}
+
+body {
+  font-family: 'montserrat', sans-serif;
+  font-weight: 300;
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+}
+
+body img {
+  width: 300px;
+  transition: 0.5s;
+}
+
+body img:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+  cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym49.cur), auto !important;
+}
+
+h1 {
+  font-size: 5em;
+  z-index: 99;
+  text-shadow: var(--bg-color) 3px 3px 5px;
+}
+
+h2 {
+  font-size: 50px;
+  margin: 50px;
+}
+
+h3 {
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+.mensagem {
+  font-size: 1.5em;
+  margin-top: 40px;
+}
+
+.box {
+  border: 2px solid var(--primary-color);
+  display: inline-block;
+  margin: 20px;
+  padding: 10px;
+  font-size: 4em;
+}
+
+.botao {
+  padding: 10px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: start;
+    padding: 5px;
+  }
+
+  img {
+    max-width: 50%;
+    padding: 20px;
+  }
+
+  body img:hover {
+    transform: none;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    margin: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+}
