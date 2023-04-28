@@ -65,6 +65,7 @@ h3 {
   border-radius: 5px;
   font-weight: 700;
   font-size: 1.2em;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
